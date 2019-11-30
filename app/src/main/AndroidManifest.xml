@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gltools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainSelector"
+            android:label="Selector"
+            android:parentActivityName=".MainActivity"
+            >
+
+        </activity>
+        <activity android:name=".controlleur.MainAnnuaire"
+            android:label="Annuaire"
+            android:parentActivityName=".controlleur.MainAnnuaire"
+            >
+
+        </activity>
+        <activity android:name=".MainCalculatrice"
+            android:label="Calculatrice"
+            android:parentActivityName=".MainActivity"
+            >
+
+        </activity>
+        <activity android:name=".MainJeu"
+            android:label="Jeu"
+            android:parentActivityName=".MainActivity"
+            >
+
+        </activity>
+
+    </application>
+
+</manifest>
